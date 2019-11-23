@@ -1,6 +1,8 @@
 import React from 'react';
 import './index.css';
 import './tailwind.css';
+import { FaTwitterSquare} from "react-icons/fa";
+import { IconContext } from "react-icons";
 
 const marked = require('marked');
 
@@ -20,6 +22,9 @@ class App extends React.Component {
     <div>
       <SiteNavbar/>
       <MarkDown/>
+      <IconContext.Provider value={{ size: "1em"}}>
+      <footer className=" float-right">Made with ♥ by <a className="underline" href="https://twitter.com/TheTehseen">@thtehseen</a></footer>
+      </IconContext.Provider>
     </div>
   );
 };
@@ -33,9 +38,12 @@ class SiteNavbar extends React.Component {
     <div>
       <h1 className="h-8 text-white font-mono font-extrabold text-lg">Markdown-Previewer</h1>
     </div>
-    <div >
-    { /* button for hamburger */ }
+    <div className="font-hairline text-white">Github Flavored!</div>
+    <IconContext.Provider value={{ size: "2em", color:"white" }}>
+    <div>
+    <a href="https://twitter.com/TheTehseen" title="Twitter"><FaTwitterSquare/></a>
     </div>
+    </IconContext.Provider>
   </header>
       </div>
     )
