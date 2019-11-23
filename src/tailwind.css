@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
+
+.bgReact {
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+        blockquote {
+          border-left: 3px solid #224B4B;
+          color: #224B4B;
+          padding-left: 5px;
+          margin-left: 25px;
+        }
+      
+        code {
+          background: purple;
+          padding: 1px 4px 2px 4px;
+          font-size: 12px;
+          font-style: italic;
+          font-weight: bold;
+          color: white;
+        }
+      
+        pre {
+          background: purple;
+          padding: 5px 0 5px 5px;
+        }
+      
+        h1 {
+            font-size: larger;
+            font-weight: bold;
+          border-bottom: 2px solid black;
+        }
+      
+        h2 {
+            font-size: large;
+            font-weight: bold;
+          border-bottom: 1px solid black;
+        }
+      
+        table {
+          border-collapse: collapse;
+        }
+      
+        td,
+        th {
+          border: 2px solid black;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+        li,ul {
+            list-style-type: disc;
+            list-style-position: outside;
+        }
+      
+    
 @tailwind utilities;
+
+
